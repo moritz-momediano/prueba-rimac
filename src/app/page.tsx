@@ -163,7 +163,7 @@ export default function Home() {
   return (<div className={styles["rimac-home"]}>
     <Grid>
       <div className={styles.desktop}>
-        <Image className={styles.image} src="/Family.png" alt="family" width={480} height={560}></Image>
+        <Image className={styles.image} src="/Family.svg" alt="family" width={480} height={560}></Image>
         <div className={styles["container-right"]}>
           {title}
           {form}
@@ -172,7 +172,7 @@ export default function Home() {
       <div className={styles.mobile}>
         <div className={styles["container-top"]}>
           {title}
-          <Image className={styles.image} src="/Family.png" alt="family" width={480} height={560}></Image>
+          <Image className={styles.image} src="/Family.svg" alt="family" width={480} height={560}></Image>
         </div>
         <hr></hr>
         {form}
