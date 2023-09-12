@@ -1,0 +1,18 @@
+@import "../../styles/responsive.scss";
+
+.rimac-tag {
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+    border-radius: 4px;
+    width: fit-content;
+
+    @include mobile {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 2px 8px;
+    }
+}

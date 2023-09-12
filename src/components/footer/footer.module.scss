@@ -1,0 +1,57 @@
+@import "../../styles/responsive.scss";
+
+.rimac-footer {
+    background: #03050F;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: auto;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .logo {
+        grid-column: span 2;
+
+        @include mobile {
+            grid-column: span 4;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .text {
+        display: flex;
+        color: #F8F9FF;
+        size: 14px;
+        line-height: 16px;
+        text-align: center;
+        justify-content: flex-end;
+        align-items: center;
+        grid-column: span 8 / -1;
+
+        @include mobile {
+            grid-column: span 4;
+            size: 12px;
+            line-height: 20px;
+            justify-content: center;
+        }
+    }
+
+    hr {
+        display: none;
+        width: 100%;
+        height: 1px;
+        background-color: #F8F9FF;
+        margin: 24px 0;
+        border: 0;
+
+        @include mobile {
+            display: block;
+            grid-column: span 4;
+        }
+    }
+
+}

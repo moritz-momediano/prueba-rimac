@@ -1,0 +1,79 @@
+@import "../../styles/responsive.scss";
+
+.rimac-summary {
+
+    @include mobile {
+        margin-top: 32px;
+    }
+
+    .container {
+        grid-column: span 12;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: 40px;
+            line-height: 28px;
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 48px;
+
+            @include mobile {
+                margin-bottom: 40px;
+            }
+        }
+
+        .detail-container {
+            display: flex;
+            flex-direction: column;
+            padding: 24px 32px;
+            row-gap: 16px;
+            box-shadow: 0px 1px 24px 0px #AEACF340;
+            border-radius: 24px;
+
+            .price-title {
+                font-size: 10px;
+                line-height: 16px;
+                font-weight: 900;
+            }
+
+            .container-name {
+                display: flex;
+                column-gap: 12px;
+
+                .name {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 700;
+                }
+            }
+
+            hr {
+                grid-column: span 4;
+                width: 100%;
+                height: 1px;
+                background-color: #D7DBF5;
+                border: 0;
+            }
+
+            .detail {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+
+                .detail-title {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin: 0;
+                }
+
+                .detail-item {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+            }
+        }
+    }
+}

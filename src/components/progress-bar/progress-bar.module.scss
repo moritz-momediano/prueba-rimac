@@ -1,0 +1,84 @@
+@import "../../styles/responsive.scss";
+
+.rimac-progress-bar {
+    padding: 16px 0;
+    background-color: #EDEFFC;
+
+    @include mobile {
+        display: none;
+    }
+
+    .container {
+        grid-column: span 12;
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+    }
+
+    .step {
+        display: flex;
+        column-gap: 16px;
+
+        .number {
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #7981B2;
+            color: #7981B2;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+            height: 24px;
+            width: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #7981B2;
+        }
+
+        &.active {
+            .number {
+                background-color: #4F4FFF;
+                border: 0;
+                color: white;
+            }
+
+            .text {
+                color: inherit;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .next-step {
+        width: 32px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        column-gap: 6px;
+
+        span {
+            border: 1px solid #7981B2;
+            border-radius: 1px;
+
+            &.round-3 {
+                width: 3px;
+            }
+
+            &.round-4 {
+                width: 4px;
+            }
+        }
+
+        &.active {
+            span {
+                border-color: #4F4FFF;
+            }
+        }
+    }
+}
